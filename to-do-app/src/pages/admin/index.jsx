@@ -2,7 +2,7 @@ import React from 'react'
 
 const MainIndex = () => {
   return (
-    <><h1>MainIndex</h1></>
+    <><h1>MainIndex new</h1></>
   )
 }
 
