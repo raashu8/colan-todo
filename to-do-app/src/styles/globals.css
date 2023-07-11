@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* login page style starts from here */
+.login-page-main {
+  background-color: #eeeeee;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.login-box {
+  /* height: 65%;
+  width: 75%; */
+  background-color: red;
+  /* margin: auto; */
+  background-color: white;
+}
+
+.login-box-in {
+  display: flex;
+  height: 100%;
+}
+
+.login-image-color {
+  background-color: rgba(6, 6, 7, 0.8);
+  /* background-color: rgba(39, 55, 77, 0.8); */
+  /* 4F709C */
+
+  /* fallback for old browsers */
+  /* background-color: linear-gradient(to right, #2C5364, #203A43, #0F2027, 0.6); */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 100%;
+}
+
+.login-image {
+  width: 50%;
+  /* background-image: "../images/todo background.jpg"; */
+  height: 100% !important;
+  background-image: url(/images/todo-background.jpg) !important;
+  background-size: 100% 100%;
+  /* padding: 20px; */
+}
+
+.logo img {
+  width: 250px;
+  filter: invert();
+  padding: 40px;
+}
+
+.login-image .desc {
+  color: white;
+  padding: 60px;
+  text-transform: capitalize;
+  word-spacing: 7px;
+  /* margin: auto; */
+
+  /* align-items: center; */
+}
+
+.desc h2 {
+  line-height: 45px;
+}
+
+.login-content {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  color: #1A1110;
+}
+
+.quote-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 75%;
+}
+
+.log-btn {
+  background-color: black;
+  color: white;
+  width: 55%;
+  max-width: 100%;
+  padding: 5px 20px;
+}
+
+.log-btn:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.planz-account{
+  width: 65%;
+  margin: auto;
+}
+.planz-account a {
+  text-decoration: none;
+  color: black;
+}
+
+.planz-account a:hover {
+
+  color: #003478;
+}
+
+.planz-account span {
+  text-decoration: underline;
+}
+
+.log-list{
+  display: flex;
+}
+
+@media screen and (max-width:786px) {
+  .login-image{
+    display: none;
+  }
+
+  .TextField{
+    width: 80%;
+  }
+
+  .login-content{
+width: 100%;
+  }
+}

@@ -4,7 +4,7 @@ import { useEffect } from "react"
 
 export default function Home() {
   useEffect(() => {
-  router.push("/admin")
+  router.push("/auth/login")
   }, [])
   return (
     <>
