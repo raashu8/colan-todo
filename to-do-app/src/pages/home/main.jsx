@@ -198,7 +198,7 @@ const MainIndex = () => {
                   >
                     {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
                   </ListItemIcon>
-                  <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
+                  <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 ,color:"white"}} />
                 </ListItemButton>
               </ListItem>
             ))}
@@ -224,7 +224,7 @@ const MainIndex = () => {
                   >
                     {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
                   </ListItemIcon>
-                  <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
+                  <ListItemText primary={text} sx={{ opacity: open ? 1 : 0,color:"white" }} />
                 </ListItemButton>
               </ListItem>
             ))}

@@ -244,5 +244,5 @@ video {
 
 .MuiDrawer-paper,.css-12i7wg6-MuiPaper-root-MuiDrawer-paper{
   background-color: black !important;
-  color: white;
+  /* color: white !important; */
 }
