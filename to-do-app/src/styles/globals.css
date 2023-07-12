@@ -113,7 +113,7 @@ video {
 }
 
 .login-image-color {
-  background-color: rgba(6, 6, 7, 0.8);
+  background-color: rgba(6, 6, 7, 0.7);
   /* background-color: rgba(39, 55, 77, 0.8); */
   /* 4F709C */
 
@@ -129,7 +129,7 @@ video {
   /* background-image: "../images/todo background.jpg"; */
   height: 100% !important;
   background-image: url(/images/todo-background.jpg) !important;
-  background-size: 100% 100%;
+  background-size: 100%;
   /* padding: 20px; */
 }
 
@@ -157,7 +157,7 @@ video {
   width: 50%;
   text-align: center;
   margin: auto;
-  color: #1A1110;
+  color: #1a1110;
 }
 
 .quote-content {
@@ -169,10 +169,11 @@ video {
 
 .log-btn {
   background-color: black;
+  border: 2px solid black;
   color: white;
   width: 55%;
   max-width: 100%;
-  padding: 5px 20px;
+  padding: 4px 20px;
 }
 
 .log-btn:hover {
@@ -181,7 +182,7 @@ video {
   border: 2px solid black;
 }
 
-.planz-account{
+.planz-account {
   width: 65%;
   margin: auto;
 }
@@ -191,7 +192,6 @@ video {
 }
 
 .planz-account a:hover {
-
   color: #003478;
 }
 
@@ -199,35 +199,50 @@ video {
   text-decoration: underline;
 }
 
-.log-list{
+.log-list {
   display: flex;
 }
 
-.log-phone{
+.log-phone {
   position: absolute;
-top: -160px;
+  top: -160px;
   width: 100%;
   display: none;
   padding-bottom: 30px;
-  }
+}
 
-.log-phone img{
+.log-phone img {
   width: 170px;
 }
 
-@media screen and (max-width:786px) {
-  .login-image{
+.animate__fadeInDown {
+  display: inline-block;
+ 
+
+  animation: animate__fadeInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+@media screen and (max-width: 786px) {
+  .login-image {
     display: none;
   }
 
-  .TextField{
+  .TextField {
     width: 80%;
   }
 
-  .login-content{
-width: 100%;
+  .login-content {
+    width: 100%;
   }
-  .log-phone{
+  .log-phone {
     display: block;
   }
+}
+
+
+
+.MuiDrawer-paper,.css-12i7wg6-MuiPaper-root-MuiDrawer-paper{
+  background-color: black !important;
+  color: white;
 }
