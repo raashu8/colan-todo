@@ -32,7 +32,10 @@ const Login = () => {
                 </div>
               </div>
             </div>
-            <div className="login-content">
+            <div className="login-content" style={{position:"relative"}}>
+              <div className="log-phone">
+           <img src="/images/logo.png" alt="" />
+           </div>
               <h2>Welcome Back</h2>
               <p
                 style={{

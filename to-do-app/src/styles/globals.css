@@ -203,6 +203,18 @@ video {
   display: flex;
 }
 
+.log-phone{
+  position: absolute;
+top: -160px;
+  width: 100%;
+  display: none;
+  padding-bottom: 30px;
+  }
+
+.log-phone img{
+  width: 170px;
+}
+
 @media screen and (max-width:786px) {
   .login-image{
     display: none;
@@ -214,5 +226,8 @@ video {
 
   .login-content{
 width: 100%;
+  }
+  .log-phone{
+    display: block;
   }
 }
