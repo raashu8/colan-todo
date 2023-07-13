@@ -1,0 +1,14 @@
+.navbar1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navlogo{
+    filter: invert();
+}
+
+.navlogo img{
+    width: 130px;
+}
