@@ -33,6 +33,7 @@ import DashboardOutlinedIcon from "@mui/icons-material/DashboardOutlined";
 import { sidebarData } from "./helper";
 import router from "next/router";
 import Link from "next/link";
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 
 const drawerWidth = 240;
 
@@ -222,13 +223,14 @@ const UserLayout = ({ children }, props) => {
                     />
                   </Paper>
                 </div>
-                {/* <div className={classes.accounts1}>
-                  <Avatar alt="Cindy Baker" src="/images/account1.jpg" />
-                </div> */}
+        
+             <div>
 
-                {/* xxx */}
+
+             </div>
                 {auth && (
                   <div>
+                            <SettingsOutlinedIcon className="me-4" />
                     <IconButton
                       size="large"
                       aria-label="account of current user"
@@ -257,10 +259,10 @@ const UserLayout = ({ children }, props) => {
                     >
                       <MenuItem onClick={handleClose}>My Profile</MenuItem>
                       <MenuItem onClick={handleClose}>
-                        {" "}
+                  
                         <Link
                           style={{ textDecoration: "none", color: "black" }}
-                          href="#"
+                          href="/"
                         >
                           log out
                         </Link>
