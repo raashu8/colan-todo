@@ -132,46 +132,9 @@ const UserLayout = ({ children }, props) => {
 
   return (
     <>
-      {/* <nav>
-        <div className={classes.navbar1}>
-          <div className={classes.navlogo}>
-            <div className={classes.hamburgericon}>
-              <i class="fa-solid fa-bars"></i>
-            </div>
-            <div className={classes.mainlogo}>
-              <img src="/images/logo.png" alt="" />
-            </div>
-          </div>
-
-          <div className={classes.navbarsearch}>
-            <Paper
-              component="form"
-              sx={{
-                p: "2px 4px",
-                display: "flex",
-                alignItems: "center",
-                width: 400,
-              }}
-            >
-               <IconButton type="button" sx={{ p: "10px" }} aria-label="search">
-                <SearchIcon />
-              </IconButton>
-              <InputBase
-                sx={{ ml: 1, flex: 1 }}
-                placeholder="Search"
-                inputProps={{ "aria-label": "search" }}
-              />
-             
-              <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
-             
-            </Paper>
-          </div>
-        </div>
-      </nav> */}
-
       <Box sx={{ display: "flex" }}>
         <CssBaseline />
-        <AppBar position="fixed" open={open} sx={{ backgroundColor: "black" }}>
+        <AppBar position="fixed" open={open} sx={{ backgroundColor: "black",borderBottom:"1px solid white" }}>
           <Toolbar>
             <IconButton
               color="inherit"
@@ -355,7 +318,7 @@ const UserLayout = ({ children }, props) => {
         </Drawer>
         <Box
           component="main"
-          sx={{ flexGrow: 1, p: 3, backgroundColor: "grey" }}
+          sx={{ flexGrow: 1, p: 3, backgroundColor:"black",  }}
         >
           <DrawerHeader />
           {children}

@@ -24,6 +24,13 @@ const Login = () => {
     event.preventDefault()
   };
 
+  // React.useEffect(() => {
+  //   history.pushState(null, null, location.href);
+  //   window.onpopstate = function () {
+  //     history.go(1);
+  //   };
+  // }, []);
+
   return !showSignUp ? (
     <>
       {/* login page starts from here */}

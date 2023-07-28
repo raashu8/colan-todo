@@ -89,6 +89,10 @@ video {
   padding: 0;
 }
 
+body {
+  background-color: black;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 /* login page style starts from here */
@@ -217,7 +221,6 @@ video {
 
 .animate__fadeInDown {
   display: inline-block;
- 
 
   animation: animate__fadeInDown; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 1s; /* don't forget to set a duration! */
@@ -240,18 +243,163 @@ video {
   }
 }
 
-
-
-.MuiDrawer-paper,.css-12i7wg6-MuiPaper-root-MuiDrawer-paper{
+.MuiDrawer-paper,
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
   background-color: black !important;
   /* color: white !important; */
 }
 
 .css-8u39c-MuiTypography-root {
-width: 100%;
+  width: 100%;
 }
 
 .css-3wafqk {
   width: 100%;
-  }
+}
 
+.notes-app1 {
+  height: 100vh;
+  display: flex;
+  gap: 15px;
+  /* padding: 40px; */
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: lightslategrey;
+  transition: 300px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: grey;
+}
+
+/* note container section */
+.note-container {
+  height: 90%;
+}
+
+.note-container h2 {
+  margin-bottom: 20px;
+}
+
+.note-container-notes {
+  /* min-height: 200px;
+    max-height: 100%; */
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  gap: 20px;
+  /* overflow-y: scroll; */
+}
+
+/* sidebar section */
+.img1 {
+  cursor: pointer;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  height: 0;
+  transition: 300ms;
+}
+
+.sidebar-list-item {
+  border-radius: 50%;
+  height: 28px;
+  width: 28px;
+}
+
+.sidebar-list li {
+  list-style: none;
+}
+
+.sidebar-list-active {
+  height: 400px;
+}
+
+/* notes section style */
+.note {
+  padding: 15px;
+  max-height: 500px;
+  height: 100%;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  border-radius: 8px;
+  margin: 5px;
+  /* overflow-y:scroll ; */
+}
+
+/* .note_text{
+  flex: 1;
+  resize: none;
+  background-color: transparent;
+  font-size: 1rem;
+  line-height: 1.875rem;
+
+  outline: none;
+  border: none;
+} */
+
+.note_text {
+  resize: none;
+  /* overflow: hidden;  */
+  min-height: 50px;
+  width: 100%;
+  background-color: transparent;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+}
+
+.note_text::-webkit-scrollbar {
+  display: none;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-delte-icon {
+  opacity: 0;
+}
+
+.footer-delte-icon:hover {
+  cursor: pointer;
+}
+
+.note:hover .note-footer .footer-delte-icon {
+  opacity: 1;
+}
+
+.note:hover {
+  outline: 1px solid grey;
+}
+
+.note:active {
+  outline: 1px solid grey;
+}
+
+.css-2dum1v-MuiDrawer-docked .MuiDrawer-paper,.MuiDrawer-paper, .css-12i7wg6-MuiPaper-root-MuiDrawer-paper{
+box-shadow: 1px 0px 2px 0px rgb(255 255 255);
+}
