@@ -59,17 +59,18 @@ const Note = (props) => {
     debounce(() => UpdateText(text, id));
   };
 
-  const noteText = props.note && props.note.text ? props.note.text : "";
+  // Check if props.note exists and has the time property
+  if (!props.note || !props.note.time) {
+    // Handle the case where props.note is not available or time is not defined
+    return null; // Return null or any other fallback UI as needed
+  }
 
   return (
-    <div
-      className="note"
-      style={{ backgroundColor: props.note?.color || "#ffffff" }}
-    >
+    <div className="note" style={{ backgroundColor: props.note?.color || '#ffffff' }}>
       <textarea
         //  onChange={(event)=>{}}
         className="note_text"
-        defaultValue={noteText} // Use the noteText variable for defaultValue
+        defaultValue={props.note.text}
         style={{ color: "white" }}
         ref={textareaRef} // Use the ref to get a reference to the textarea
         onChange={(event) => {
