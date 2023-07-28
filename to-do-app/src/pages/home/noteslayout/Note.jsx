@@ -59,13 +59,17 @@ const Note = (props) => {
     debounce(() => UpdateText(text, id));
   };
 
-  // const NoteColor = props?.note?.color || "#ffffff";
+  const noteText = props.note && props.note.text ? props.note.text : "";
+
   return (
-    <div className="note" style={{ backgroundColor: props.note?.color || '#ffffff' }}>
+    <div
+      className="note"
+      style={{ backgroundColor: props.note?.color || "#ffffff" }}
+    >
       <textarea
         //  onChange={(event)=>{}}
         className="note_text"
-        defaultValue={props.note.text}
+        defaultValue={noteText} // Use the noteText variable for defaultValue
         style={{ color: "white" }}
         ref={textareaRef} // Use the ref to get a reference to the textarea
         onChange={(event) => {
