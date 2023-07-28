@@ -2,8 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 
 import UserLayout from "../../../components/layout";
-import SideBar from "./components/SideBar";
-import NoteContainer from "./components/NoteContainer";
+import SideBar from "./noteslayout/SideBar";
+import NoteContainer from "./noteslayout/NoteContainer";
 
 const ToDoList = () => {
 
