@@ -59,9 +59,9 @@ const Note = (props) => {
     debounce(() => UpdateText(text, id));
   };
 
-  const NoteColor = props?.note?.color || "#ffffff";
+  // const NoteColor = props?.note?.color || "#ffffff";
   return (
-    <div className="note" style={{ backgroundColor: NoteColor }}>
+    <div className="note" style={{ backgroundColor: props.note?.color || '#ffffff' }}>
       <textarea
         //  onChange={(event)=>{}}
         className="note_text"
