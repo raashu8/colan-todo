@@ -19,7 +19,7 @@ To use the Awesome Todo App, follow these simple steps:
 
 Clone the repository to your local machine using 
 ```
-git clone https://github.com/your-username/todo-app.git.
+git clone https://github.com/raashu8/colan-todo.git
 ```
 Navigate to the project directory with 
 ```
@@ -62,4 +62,5 @@ I welcome contributions from the community to make the Awesome Todo App even bet
 
 If you have any questions, suggestions, or feedback, feel free to contact me at aaminaraashid@gmail.com. We'd love to hear from you!
 
-🌟 Enjoy the Awesome Todo App! 😊
+🌟 **Enjoy the Awesome Todo App!** 😊
+~Raashid
