@@ -1,4 +1,4 @@
-#📋 Awesome Todo App
+# 📋 Awesome Todo App
 
 Todo App Logo
 
@@ -39,18 +39,18 @@ Open your web browser and go to the below link to start using the app.
 ```
 http://localhost:8080
 ```
-#📝 Usage
+## 📝 Usage
 
 Once the app is running, you can easily add, update, and complete your tasks. You can organize them into different categories using tags and set due dates to keep track of deadlines. The app will automatically save your changes, so you don't have to worry about losing anything.
 
-#💡 Pro Tips
+## 💡 Pro Tips
 
 Use emojis 🚀 to highlight urgent tasks.
 Add descriptions to tasks for more context.
 Leverage tags like #work, #personal, #shopping to group tasks accordingly.
 Celebrate each completed task with a happy dance 💃.
 
-#🤝 Contributing
+## 🤝 Contributing
 
 I welcome contributions from the community to make the Awesome Todo App even better. If you want to contribute, please follow these steps:
 
@@ -60,7 +60,7 @@ Make your changes and commit them with descriptive messages.
 Push your changes to your fork.
 Open a pull request, and we'll review your contribution.
 
-# 📧 Contact
+## 📧 Contact
 
 If you have any questions, suggestions, or feedback, feel free to contact me at aaminaraashid@gmail.com. We'd love to hear from you!
 
