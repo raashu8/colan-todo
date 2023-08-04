@@ -1,19 +1,17 @@
 # 📋 Awesome Todo App
 
-Todo App Logo
-
-📅 Introduction
+## 📅 Introduction
 
 Welcome to the Awesome Todo App! This is a simple and powerful todo application that helps you stay organized and manage your tasks effectively. With an intuitive user interface and delightful features, the Awesome Todo App makes your life easier and more productive.
 
-🌟 Key Features
+## 🌟 Key Features
 
-✅ Create and manage your tasks with ease.
-✅ Organize tasks into categories or tags for better grouping.
-✅ Set due dates and priorities for each task.
-✅ Mark tasks as complete or remove them when done.
-✅ Review completed tasks and celebrate your accomplishments. 🎉
-✅ Dark mode support for a pleasant user experience at night. 🌙
+- ✅ Create and manage your tasks with ease.
+- ✅ Organize tasks into categories or tags for better grouping.
+- ✅ Set due dates and priorities for each task.
+- ✅ Mark tasks as complete or remove them when done.
+- ✅ Review completed tasks and celebrate your accomplishments. 🎉
+- ✅ Dark mode support for a pleasant user experience at night. 🌙
 
 # 🚀 Getting Started
 
@@ -45,20 +43,20 @@ Once the app is running, you can easily add, update, and complete your tasks. Yo
 
 ## 💡 Pro Tips
 
-Use emojis 🚀 to highlight urgent tasks.
-Add descriptions to tasks for more context.
-Leverage tags like #work, #personal, #shopping to group tasks accordingly.
-Celebrate each completed task with a happy dance 💃.
+- Use emojis 🚀 to highlight urgent tasks.
+- Add descriptions to tasks for more context.
+- Leverage tags like #work, #personal, #shopping to group tasks accordingly.
+- Celebrate each completed task with a happy dance 💃.
 
 ## 🤝 Contributing
 
 I welcome contributions from the community to make the Awesome Todo App even better. If you want to contribute, please follow these steps:
 
-Fork the repository.
-Create a new branch for your feature or bug fix.
-Make your changes and commit them with descriptive messages.
-Push your changes to your fork.
-Open a pull request, and we'll review your contribution.
+- Fork the repository.
+- Create a new branch for your feature or bug fix.
+- Make your changes and commit them with descriptive messages.
+- Push your changes to your fork.
+- Open a pull request, and we'll review your contribution.
 
 ## 📧 Contact
 
