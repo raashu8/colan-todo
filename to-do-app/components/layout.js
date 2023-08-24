@@ -162,7 +162,7 @@ const UserLayout = ({ children }, props) => {
                       p: "2px 4px",
                       display: "flex",
                       alignItems: "center",
-                      width: 400,
+                      // width: 400,
                       maxWidth: "400px",
                       height: "30px",
                     }}
@@ -178,6 +178,7 @@ const UserLayout = ({ children }, props) => {
                       sx={{ ml: 1, flex: 1 }}
                       placeholder="Search"
                       inputProps={{ "aria-label": "search" }}
+                      
                     />
 
                     <Divider
@@ -187,13 +188,10 @@ const UserLayout = ({ children }, props) => {
                   </Paper>
                 </div>
         
-             <div>
-
-
-             </div>
+             
                 {auth && (
                   <div>
-                            <SettingsOutlinedIcon className="me-4" />
+                            <SettingsOutlinedIcon className="me-2" />
                     <IconButton
                       size="large"
                       aria-label="account of current user"

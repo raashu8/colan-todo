@@ -2,7 +2,11 @@ import { Grid, TextField } from "@mui/material";
 import Link from "next/link";
 import React, { useState } from "react";
 import "animate.css";
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 // import "styles/globals.css"
 
 const Login = () => {
@@ -10,18 +14,20 @@ const Login = () => {
 
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
-  const router = useRouter()
+  const router = useRouter();
 
   const handleLogin = (event) => {
     if (login === "user" && password === "useradmin") {
       console.log("hello");
-     
+
       router.push("/home/main");
-   
     } else {
-   alert("please enter correct login credentials")
+      toast.error("please fill the required list");
+      console.log("alert");
+
+      // alert("please enter correct login credentials");
     }
-    event.preventDefault()
+    event.preventDefault();
   };
 
   // React.useEffect(() => {
@@ -86,7 +92,9 @@ const Login = () => {
                       label="Email"
                       variant="standard"
                       style={{ maxWidth: "100%", width: "55%" }}
-                      onChange={(e) => { setLogin(e.target.value) }}
+                      onChange={(e) => {
+                        setLogin(e.target.value);
+                      }}
                       value={login}
                     />
                   </Grid>
@@ -97,7 +105,9 @@ const Login = () => {
                       label="Password"
                       variant="standard"
                       style={{ maxWidth: "100%", width: "55%" }}
-                      onChange={(e) => { setPassword(e.target.value) }}
+                      onChange={(e) => {
+                        setPassword(e.target.value);
+                      }}
                       value={password}
                     />
                   </Grid>
@@ -117,7 +127,9 @@ const Login = () => {
                   </Grid>
 
                   <Grid item xs={12} md={12}>
-                    <button className="btn log-btn mt-2" onClick={handleLogin}>log in</button>
+                    <button className="btn log-btn mt-2" onClick={handleLogin}>
+                      log in
+                    </button>
                   </Grid>
                   <Grid item xs={12} md={12}>
                     <div
@@ -247,10 +259,15 @@ const Login = () => {
                   </Grid>
 
                   <Grid item xs={12} md={12}>
-                    <button className="btn log-btn mt-2" onClick={(event) => {
-                      // event.preventDefault();
-                      router.push("/home/main");
-                    }}>log in</button>
+                    <button
+                      className="btn log-btn mt-2"
+                      onClick={(event) => {
+                        // event.preventDefault();
+                        router.push("/home/main");
+                      }}
+                    >
+                      log in
+                    </button>
                   </Grid>
                   <Grid item xs={12} md={12}>
                     <div
@@ -271,6 +288,8 @@ const Login = () => {
         </div>
       </div>
       {/* signup page ends here */}
+ 
+      
     </>
   );
 };

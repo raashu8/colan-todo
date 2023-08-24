@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Note from "./Note";
 const reverseArray = (arr) => {
   if (!arr || arr.length === 0) {
@@ -27,12 +27,33 @@ const NoteContainer = (props) => {
   // const notes = reverseArray(props.notes);
   const notes = reverseArray(props.notes);
 
+
+  // search filter method
+  const [search, setSearch] = useState("");
+  const [show, setShow] = useState(notes);
+  const datashow = (e) => {
+    setShow(
+      notes.filter((data) =>
+        data.texthead.toLowerCase().includes(e.target.value.toLowerCase())
+      )
+    );
+    setSearch(e.target.value);
+
+  };
+console.log(search, show,"kkkkkkkkkk");
   return (
     <div className="note-container" style={{ color: "white" }}>
       <h2>Notes</h2>
+      <input
+        type="text"
+        placeholder="Search"
+        id="note-all"
+        value={search}
+        onChange={datashow}
+      />
       <div className="note-container-notes custom-scroll">
-        {notes?.length > 0 ? (
-          notes.map((item, i) => {
+        {show?.length > 0 ? (
+          show.map((item, i) => {
             console.log(item);
             return (
               <Note
@@ -40,6 +61,7 @@ const NoteContainer = (props) => {
                 note={item}
                 deleteNote={props.deleteNote}
                 UpdateText={props.UpdateText}
+                UpdateTextHeading={props.UpdateTextHeading}
               />
             );
           })

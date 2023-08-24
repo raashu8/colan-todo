@@ -90,7 +90,7 @@ video {
 }
 
 body {
-  background-color: black;
+background-color: black !important;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
@@ -336,8 +336,8 @@ body {
 
 /* notes section style */
 .note {
-  padding: 15px;
-  max-height: 500px;
+  padding: 10px;
+  max-height: 400px;
   height: 100%;
   width: 260px;
   display: flex;
@@ -359,13 +359,30 @@ body {
   border: none;
 } */
 
+
+.note_text_heading{
+  resize: none; 
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin-bottom: 7px;
+  font-size: 20px;
+  max-height: 85px;
+  color: white;
+  font-weight: 600;
+}
+
+.note_text_heading::-webkit-scrollbar{
+  display: none;
+}
+
 .note_text {
   resize: none;
   /* overflow: hidden;  */
   min-height: 50px;
   width: 100%;
   background-color: transparent;
-  font-size: 1rem;
+  font-size: 14px;
   outline: none;
   border: none;
 }
@@ -378,6 +395,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .footer-delte-icon {
